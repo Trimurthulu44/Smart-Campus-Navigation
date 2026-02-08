@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+/* LOGIN */
+
+.login-body {
+    height: 100vh;
+    background: linear-gradient(120deg, #0f2027, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    width: 320px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #243b55;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* BOT PAGE */
+
+.bot-body {
+    min-height: 100vh;
+    transition: 0.4s;
+}
+
+.bot-body.light {
+    background: #e3f2fd;
+    color: #000;
+}
+
+.bot-body.dark {
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+/* CAMPUS IMAGE SIDE */
+
+.campus-panel {
+    width: 45%;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.campus-panel img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+
+/* CHATBOT SIDE */
+
+.chat-container {
+    width: 400px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#chat-box {
+    height: 260px;
+    overflow-y: auto;
+}
+
+.msg {
+    margin: 8px 0;
+}
+
+.user {
+    text-align: right;
+    color: #0d6efd;
+}
+
+.bot {
+    text-align: left;
+    color: #198754;
+}
+
+.input-area {
+    display: flex;
+    margin-top: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-area button {
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+}
