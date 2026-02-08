@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CampusNav Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bot-body light">
+
+    <header>
+        <h2>🎓 CampusNav</h2>
+        <div class="controls">
+            <button onclick="setMode('light')">☀️</button>
+            <button onclick="setMode('dark')">🌙</button>
+        </div>
+    </header>
+
+    <div class="profile">
+        Logged in as <b id="userName"></b>
+    </div>
+
+    <div class="main-layout">
+
+        <!-- LEFT SIDE : CAMPUS IMAGE -->
+        <div class="campus-panel">
+            <h3>📍 Campus Blueprint</h3>
+            <p>Visual map to understand left / right directions</p>
+            <img src="campus-map.jpg.png" alt="Campus Map">
+        </div>
+
+        <!-- RIGHT SIDE : CHATBOT -->
+        <div class="chat-container">
+            <div id="chat-box"></div>
+
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Ask for directions or places...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="bot.js"></script>
+</body>
+
+</html>
